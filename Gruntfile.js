@@ -4,6 +4,9 @@ module.exports = function (grunt) {
     // load all grunt tasks
     grunt.loadNpmTasks('grunt-contrib-less');
     grunt.loadNpmTasks('grunt-contrib-watch');
+    grunt.loadNpmTasks('grunt-contrib-copy');
+    grunt.loadNpmTasks('grunt-contrib-clean');
+    grunt.loadNpmTasks('grunt-contrib-cssmin');
     
     grunt.initConfig({
         pkg: grunt.file.readJSON("package.json"),
@@ -17,13 +20,13 @@ module.exports = function (grunt) {
         less: {
           style: {
             files: {
-              "source/css/style.css": ["source/less/style.less"]
+              "build/css/style.css": ["source/less/style.less"]
             }
           }
         },
-  clean: {
-        build: ["build"]
-    },
+        clean: {
+            build: ["build"]
+        },
 
     copy: {
         build: {
@@ -40,7 +43,23 @@ module.exports = function (grunt) {
             }]
         }
     },
+    
+    cssmin: {
+        options: {
+            keepSpecialComments: 0,
+            report: "gzip"
+        },
+        style: {
+            files: {
+                "build/css/style.min.css": ["source/css/style.css"]
+            }
+        }
+    },
     });
      // the default task (running "grunt" in console) is "watch"
-grunt.registerTask("build", ["clean", "copy", "less"]);
+grunt.registerTask("build", [
+      "clean",
+      "copy",
+      "less",
+      "cssmin"]);
 };

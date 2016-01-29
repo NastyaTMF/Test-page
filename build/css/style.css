@@ -1,0 +1,205 @@
+@font-face {
+  font-family: Georgia;
+  src: url(fonts/Georgia-Regular/Georgia-Regular.ttf);
+}
+.container {
+  background: #ffffff;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-bottom: 95px;
+}
+body {
+  font: 24px/24px Georgia, Arial, sans-serif;
+  color: #000000;
+  background-color: #282828;
+}
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 43px;
+}
+.navigation__list {
+  display: block;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 580px;
+  text-align: right;
+}
+.navigation__link {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  line-height: 30px;
+  font-size: 20px;
+  padding-right: 20px;
+  text-shadow: 4px 6px 5px #535c57;
+}
+.navigation__item {
+  display: inline-block;
+  cursor: pointer;
+}
+.main-header {
+  background-color: #63639f;
+  min-height: 685px;
+  background: url("../img/header-bg.jpg") no-repeat;
+}
+.main-header__logo {
+  width: 180px;
+  color: white;
+  line-height: 30px;
+  font-size: 30px;
+  text-shadow: 4px 6px 5px #3a4147;
+}
+.main-header__text {
+  margin: 0 auto;
+  width: 395px;
+  color: white;
+  font-size: 36px;
+  line-height: 48px;
+  margin-top: 185px;
+  margin-bottom: 185px;
+}
+.button {
+  width: 315px;
+  background-color: #6666ff;
+  font-size: 30px;
+  line-height: 30px;
+  border-radius: 25px;
+  margin: 0 auto;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  text-align: center;
+  text-transform: uppercase;
+  box-shadow: 4px 4px 6px #474747;
+}
+.button--first {
+  box-shadow: 4px 4px 6px black;
+}
+.button__link {
+  text-decoration: none;
+  color: white;
+}
+.feature {
+  padding-top: 35px;
+  padding-left: 30px;
+  padding-right: 30px;
+  position: relative;
+}
+.feature__arrow {
+  width: 880px;
+  height: 20px;
+  background: white url("../img/arrow.png") no-repeat center;
+  margin-left: 40px;
+}
+.feature--portfolio:after {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 80px;
+  background: url("../img/arrow-left.png") no-repeat center;
+  box-shadow: none;
+  top: 40%;
+  left: 10px;
+}
+.feature--portfolio:before {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 80px;
+  background: url("../img/arrow-right.png") no-repeat center;
+  box-shadow: none;
+  top: 40%;
+  right: 10px;
+}
+.feature__title {
+  font-size: 48px;
+  line-height: 30px;
+  margin: 0 auto;
+  text-align: center;
+  font-weight: normal;
+}
+.feature__col {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30px;
+  padding-bottom: 120px;
+  font-size: 24px;
+  line-height: 24px;
+}
+.feature__col33 img {
+  border-radius: 50%;
+}
+.feature__col33-text {
+  width: 195px;
+  font-size: 18px;
+  line-height: 18px;
+}
+.feature__col33-image {
+  width: 190px;
+  height: 190px;
+  border-radius: 50%;
+}
+.feature__col33-image--1 {
+  background: #6666ff url("../img/feature-small-1.jpg") no-repeat 50% -2%;
+}
+.feature__col33-image--2 {
+  background: #6666ff url("../img/feature-small-2.jpg") no-repeat 50% -2%;
+}
+.feature__col33-image--3 {
+  background: #6666ff url("../img/feature-small-3.jpg") no-repeat 50% -2%;
+}
+.feature__leftcol {
+  width: 320px;
+  margin-right: 25px;
+}
+.feature__rightcol {
+  width: 550px;
+}
+.feature__rightcol--first {
+  margin-top: 0;
+  margin-bottom: 150px;
+}
+.feature__slider {
+  width: 865px;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 40px;
+  padding-bottom: 110px;
+  position: relative;
+  margin: 0 auto;
+}
+.feature__slider:after {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 385px;
+  background-color: #8383fe;
+  box-shadow: 3px 5px 3px #dbdbdb;
+  top: 12%;
+  left: 50%;
+}
+.feature__slide {
+  width: 335px;
+  height: 460px;
+  box-shadow: 4px 4px 6px #474747;
+}
+.feature__contacts {
+  width: 270px;
+  margin-top: 0;
+}
+.arrow {
+  margin: 0 auto;
+  height: 10px;
+}
+.arrow--medium {
+  width: 880px;
+  background: white url("../img/arrow-medium.png") no-repeat center;
+  margin-bottom: 4px;
+}
+.arrow--small {
+  width: 135px;
+  background: white url("../img/arrow-small.png") no-repeat center;
+  margin-top: 4px;
+}
