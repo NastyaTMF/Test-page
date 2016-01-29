@@ -1,0 +1,11 @@
+/** Created by TTF.in.ua **/
+@font-face {
+    font-family: 'Georgia-Regular';
+    src: url('Georgia-Regular.eot');
+    src: url('Georgia-Regular.eot?#iefix') format('embedded-opentype'),
+         url('Georgia-Regular.woff') format('woff'),
+         url('Georgia-Regular.ttf') format('truetype'),
+         url('Georgia-Regular.svg#Georgia-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}

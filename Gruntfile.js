@@ -7,17 +7,13 @@ module.exports = function (grunt) {
     
     grunt.initConfig({
         pkg: grunt.file.readJSON("package.json"),
-         watch: {
+        watch: {
           style: {
-            files: ["less/**/*.less"],
-            tasks: ["less", "postcss"],
-            options: {
-              spawn: false,
-              livereload: true
-            }
+            files: ["source/less/**/*.less"],
+            tasks: ["less"],
          }
         },
-        // "less"-task configuration
+        
         less: {
           style: {
             files: {

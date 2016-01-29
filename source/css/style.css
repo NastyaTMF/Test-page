@@ -1,10 +1,76 @@
+@font-face {
+  font-family: Georgia;
+  src: url(fonts/Georgia-Regular/Georgia-Regular.ttf);
+}
 .container {
   background: #ffffff;
   max-width: 920px;
   margin: 0 auto;
 }
 body {
-  font: 24px/24px "Georgia Regular", Arial, sans-serif;
+  font: 24px/24px Georgia, Arial, sans-serif;
   color: #000000;
   background-color: #282828;
+}
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 43px;
+}
+.navigation__list {
+  display: block;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 580px;
+  text-align: right;
+}
+.navigation__link {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  line-height: 30px;
+  font-size: 20px;
+  padding-right: 20px;
+}
+.navigation__item {
+  display: inline-block;
+  cursor: pointer;
+}
+.main-header {
+  background-color: #63639f;
+  min-height: 685px;
+  background: url("../img/header-bg.jpg") no-repeat;
+}
+.main-header__logo {
+  width: 180px;
+  color: white;
+  line-height: 30px;
+  font-size: 30px;
+}
+.main-header__text {
+  margin: 0 auto;
+  width: 395px;
+  color: white;
+  font-size: 36px;
+  line-height: 48px;
+  margin-top: 185px;
+  margin-bottom: 185px;
+}
+.button {
+  width: 315px;
+  background-color: #6666ff;
+  font-size: 30px;
+  line-height: 30px;
+  border-radius: 25px;
+  margin: 0 auto;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.button__link {
+  text-decoration: none;
+  color: white;
 }
